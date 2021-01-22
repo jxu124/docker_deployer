@@ -1,8 +1,8 @@
 # Docker - Frp
 
-Ref. https://github.com/fatedier/frp
-Github https://github.com/antonyxu-git/docker_deployment/tree/main/frp
-Docker https://hub.docker.com/repository/docker/antonyxu/frp
+- Ref. https://github.com/fatedier/frp
+- Github https://github.com/antonyxu-git/docker_deployment/tree/main/frp
+- Docker https://hub.docker.com/repository/docker/antonyxu/frp
 
 ## Useage
 
@@ -29,7 +29,7 @@ sudo docker run -it --rm --network host -v ${CONF_FLODER}:/config antonyxu/frp f
 sudo docker run -itd --name frps --restart=always --network host -v ${CONF_FLODER}:/config antonyxu/frp frps
 sudo docker run -itd --name frpc --restart=always --network host -v ${CONF_FLODER}:/config antonyxu/frp frpc
 
-# other
+# others
 sudo docker start frpc
 sudo docker stop frpc
 sudo docker restart frpc
