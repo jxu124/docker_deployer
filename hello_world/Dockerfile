@@ -3,5 +3,6 @@ LABEL maintainer="antonyxu"
 
 RUN AR=$(uname -m) && \
     echo $AR > /AR.txt && \
-    echo $AR $ARCH
+    echo $(uname -m) $ARCH && \
+    echo fin
 
