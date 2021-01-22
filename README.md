@@ -18,7 +18,7 @@ Another example to build and push Docker image on DockerHub.
 On push event, Docker image crazymax/diun:edge is built and pushed on DockerHub.
 On pull_request event, Docker image crazymax/diun:edge is built.
 On schedule event, Docker image crazymax/diun:nightly is built and pushed on DockerHub.
-On frp tags event, Docker image crazymax/diun:<version> and crazymax/diun:latest is built and pushed on DockerHub.
+On push tags event, Docker image crazymax/diun:<version> and crazymax/diun:latest is built and pushed on DockerHub.
 
 ```
 DOCKER_IMAGE=antonyxu/hello_world
