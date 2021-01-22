@@ -2,7 +2,7 @@ name: FrpBuildx
 
 on:
   schedule:
-    - cron: '0 10 1 * *' # everyday at 10am
+    - cron: '0 10 1 * *' # On the 1st of every month
   pull_request:
     branches: main
   push:
