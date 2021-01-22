@@ -1,4 +1,4 @@
-name: FrpBuildx
+name: V2rayBuildx
 
 on:
   schedule:
@@ -11,7 +11,7 @@ on:
       - v2ray*
 
 jobs:
-  FrpBuildx:
+  V2rayBuildx:
     runs-on: ubuntu-latest
     steps:
       -

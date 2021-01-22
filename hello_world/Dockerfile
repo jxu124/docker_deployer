@@ -5,4 +5,3 @@ RUN AR=$(uname -m) && \
     echo $AR > /AR.txt && \
     echo $(uname -m) $ARCH && \
     echo fin
-
