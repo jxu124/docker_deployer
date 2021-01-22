@@ -1,4 +1,4 @@
-name: build our image
+name: buildx my image
 
 on:
   push:
@@ -15,8 +15,8 @@ jobs:
         uses: crazy-max/ghaction-docker-buildx@v1
         with:
           version: latest
-      - name: build the image
+      - name: build the image hello_world
       run: |
         docker buildx build --push \
           --tag antonyxu/hello_world:latest \
-          --platform linux/amd64,linux/arm/v7,linux/arm64 .
+          --platform linux/amd64,linux/arm/v7,linux/arm64 ./hello_world
