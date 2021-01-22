@@ -13,3 +13,4 @@ LABEL maintainer="antonyxu"
 COPY --from=builder /v2ray /etc/v2ray
 RUN ln -s /etc/v2ray/v2ray /bin/ && mkdir /config
 WORKDIR /config
+CMD [ "v2ray" ]

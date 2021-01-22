@@ -13,3 +13,4 @@ LABEL maintainer="antonyxu"
 COPY --from=builder /frp /etc/frp
 RUN ln -s /etc/frp/frpc /bin/ && ln -s /etc/frp/frps /bin/ && mkdir /config
 WORKDIR /config
+CMD [ "frps" ]
