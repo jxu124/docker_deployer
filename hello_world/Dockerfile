@@ -1,6 +1,7 @@
 FROM alpine:3.7
 LABEL maintainer="antonyxu"
 
-RUN ARCH=$(uname -m) && \
-    echo $ARCH > /arch.txt
+RUN AR=$(uname -m) && \
+    echo $AR > /AR.txt && \
+    echo $AR $ARCH
 
