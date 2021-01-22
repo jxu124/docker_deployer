@@ -1,4 +1,4 @@
-name: Docker Image CI with Buildx
+name: FrpBuildx
 
 on:
   schedule:
@@ -7,11 +7,11 @@ on:
     branches: main
   push:
     branches: main
-    # tags:
-    #   - v*
+    tags:
+      - frp*
 
 jobs:
-  buildx:
+  FrpBuildx:
     runs-on: ubuntu-latest
     steps:
       -
@@ -21,10 +21,11 @@ jobs:
         name: Prepare
         id: prepare
         run: |
-          DOCKER_IMAGE=antonyxu/hello_world
-          DOCKER_PLATFORMS=linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64
-          VERSION=latest
-          SUBDIR=./hello_world
+          # linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64,linux/386,linux/ppc64le,linux/s390x
+          DOCKER_IMAGE=antonyxu/frp
+          DOCKER_PLATFORMS=linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64,linux/386
+          VERSION=0.35.0
+          SUBDIR=./frp
 
           if [[ $GITHUB_REF == refs/tags/* ]]; then
             VERSION=${GITHUB_REF#refs/tags/v}

@@ -1,6 +1,10 @@
 # docker_deployment
 docker_deployment
 
+https://www.docker.com/blog/multi-arch-build-and-images-the-simple-way/
+https://github.com/marketplace/actions/docker-buildx
+
+
 ```bash
 docker buildx build \
 --push \
