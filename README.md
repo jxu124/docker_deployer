@@ -1,28 +1,18 @@
 # docker_deployment
 docker_deployment
 
+## help
 https://www.docker.com/blog/multi-arch-build-and-images-the-simple-way/
 https://github.com/marketplace/actions/docker-buildx
 
+## Docker - v2ray
 
-```bash
-docker buildx build \
---push \
---platform linux/arm/v6,linux/arm/v7,linux/arm64/v8,linux/amd64 \
---tag antonyxu/hello_world:latest ./hello_world
-```
+- Ref. https://github.com/v2ray/v2ray-core
+- Github https://github.com/antonyxu-git/docker_deployment/tree/main/v2ray
+- Docker https://hub.docker.com/repository/docker/antonyxu/v2ray
 
-Build and push to DockerHub
-Another example to build and push Docker image on DockerHub.
+## Docker - Frp
 
-On push event, Docker image crazymax/diun:edge is built and pushed on DockerHub.
-On pull_request event, Docker image crazymax/diun:edge is built.
-On schedule event, Docker image crazymax/diun:nightly is built and pushed on DockerHub.
-On push tags event, Docker image crazymax/diun:<version> and crazymax/diun:latest is built and pushed on DockerHub.
-
-```
-DOCKER_IMAGE=antonyxu/hello_world
-DOCKER_PLATFORMS=linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64
-VERSION=latest
-SUBDIR=./hello_world
-```
+- Ref. https://github.com/fatedier/frp
+- Github https://github.com/antonyxu-git/docker_deployment/tree/main/frp
+- Docker https://hub.docker.com/repository/docker/antonyxu/frp
