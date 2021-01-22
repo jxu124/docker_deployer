@@ -23,6 +23,5 @@ jobs:
         docker buildx build \
           --platform linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64 \
           --output "type=image,push=true" \
+          --tag antonyxu:hello_world:latest \
           --file ./hello_world/Dockerfile ./hello_world
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
