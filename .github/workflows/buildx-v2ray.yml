@@ -1,4 +1,4 @@
-name: V2rayDockerBuildx
+name: V2rayBuild
 
 on:
   schedule:

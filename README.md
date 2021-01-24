@@ -1,12 +1,12 @@
 # docker_deployment
 docker_deployment
 
-[![Frp Test][1]][2][![V2ray Test][3]][4]
+[![FrpBuild Status][1]][2][![V2ray Status][3]][4]
 
-[1]: https://github.com/antonyxu-git/docker_deployment/workflows/FrpDockerBuildx/badge.svg "Frp Test Pass"
-[2]: https://github.com/antonyxu-git/docker_deployment/actions "Frp Test Failed"
-[3]: https://github.com/antonyxu-git/docker_deployment/workflows/V2rayDockerBuildx/badge.svg "V2ray Test Pass"
-[4]: https://github.com/antonyxu-git/docker_deployment/actions "V2ray Test Failed"
+[1]: https://github.com/antonyxu-git/docker_deployment/workflows/FrpBuild/badge.svg "Github Test"
+[2]: https://github.com/antonyxu-git/docker_deployment/actions?query=workflow%3AFrpBuild "Action Page"
+[3]: https://github.com/antonyxu-git/docker_deployment/workflows/V2rayBuild/badge.svg "Github Test"
+[4]: https://github.com/antonyxu-git/docker_deployment/actions?query=workflow%3AV2rayBuild "Action Page"
 
 
 ## help
