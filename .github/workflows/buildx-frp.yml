@@ -1,4 +1,4 @@
-name: FrpBuildx
+name: FrpDockerBuildx
 
 on:
   schedule:
