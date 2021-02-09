@@ -39,6 +39,7 @@ else
 fi
 
 # 建立软链接
+rm -f /usr/local/apache2/uploads
 ln -s $MOUNTPATH /usr/local/apache2/uploads
 
 # 锁文件夹权限
