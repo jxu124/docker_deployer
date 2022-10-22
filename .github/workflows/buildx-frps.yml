@@ -5,7 +5,7 @@ on:
     branches: main
 
 jobs:
-  V2rayBuildx:
+  BuildFrps:
     runs-on: ubuntu-latest
     steps:
       -
