@@ -1,11 +1,11 @@
-name: buildx-aria2
+name: buildx-dnsmasq
 
 on:
   push:
     branches: main
 
 jobs:
-  buildx-aria2:
+  buildx-dnsmasq:
     runs-on: ubuntu-latest
     steps:
       -
@@ -15,10 +15,10 @@ jobs:
         name: Prepare
         id: prepare
         run: |
-          DOCKER_IMAGE=antonyxu/aria2
+          DOCKER_IMAGE=antonyxu/dnsmasq
           DOCKER_PLATFORMS=linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64,linux/386
           VERSION=latest
-          SUBDIR=./docker/aria2
+          SUBDIR=./docker/dnsmasq
 
           TAGS="--tag ${DOCKER_IMAGE}:${VERSION}"
           if [[ $VERSION =~ ^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$ ]]; then
